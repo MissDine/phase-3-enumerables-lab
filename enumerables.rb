@@ -30,6 +30,8 @@ end
 # "hello" * 3 == "hellohellohello"
 def print_spicy_foods(spicy_foods)
   # your code here
+  spicy_foods.each {|food|
+    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{'🌶' * food[:heat_level]}"}
 end
 
 # given an array of spicy foods and a string representing a cuisine, **return a single hash**  
